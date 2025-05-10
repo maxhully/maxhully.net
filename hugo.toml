@@ -1,0 +1,5 @@
+baseURL = "https://maxhully.net/"
+languageCode = "en-us"
+title = "Max Hully"
+
+disableKinds = ["taxonomy", "term"]

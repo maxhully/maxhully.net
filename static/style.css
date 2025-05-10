@@ -1,0 +1,51 @@
+html {
+  background-color: #430f47;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+.name {
+  width: 75vw;
+  height: 25vh;
+  margin: 30vh auto;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.name__highlights {
+  animation: 3s infinite alternate highlight_pulse;
+  animation-timing-function: ease-in-out;
+}
+
+.name__shadows {
+  animation: 3s infinite alternate shadow_pulse;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes highlight_pulse {
+  from {
+    fill: #f1a5e3;
+  }
+
+  to {
+    fill: #ffc5f4;
+  }
+}
+
+@keyframes shadow_pulse {
+  from {
+    fill: #a261cf;
+  }
+
+  to {
+    fill: #d293ff;
+  }
+}
