@@ -1,51 +1,94 @@
 html {
-  background-color: #430f47;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    line-height: 1.3;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
-  min-height: 100vh;
+    background-color: rgb(238, 228, 237);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    /* min-height: 100vh; */
+}
+
+h1 {
+    margin: 0 0 1rem;
 }
 
 .name {
-  width: 75vw;
-  height: 25vh;
-  margin: 30vh auto;
-  padding: 0;
-  font-size: 1rem;
+    width: 50vw;
+    min-width: min(350px, 95vw);
+    /* height: 25vh; */
+    margin: 1rem auto;
+    padding: 0;
+    font-size: 1rem;
 }
 
 .name__highlights {
-  animation: 3s infinite alternate highlight_pulse;
-  animation-timing-function: ease-in-out;
+    animation: 3s infinite alternate highlight_pulse;
+    animation-timing-function: ease-in-out;
 }
 
 .name__shadows {
-  animation: 3s infinite alternate shadow_pulse;
-  animation-timing-function: ease-in-out;
+    animation: 3s infinite alternate shadow_pulse;
+    animation-timing-function: ease-in-out;
 }
 
 @keyframes highlight_pulse {
-  from {
-    fill: #f1a5e3;
-  }
+    from {
+        fill: #f1a5e3;
+    }
 
-  to {
-    fill: #ffc5f4;
-  }
+    to {
+        fill: #ffc5f4;
+    }
 }
 
 @keyframes shadow_pulse {
-  from {
-    fill: #a261cf;
-  }
+    from {
+        fill: #a261cf;
+    }
 
-  to {
-    fill: #d293ff;
-  }
+    to {
+        fill: #d293ff;
+    }
+}
+
+a,
+a:visited {
+    color: #6d2b9c;
+}
+a:focus,
+a:active {
+    background-color: #ffc5f4;
+    color: #4b1373;
+    outline: none;
+    box-shadow: 0 -2px 0 2px #ffc5f4, 0 2px 0 2px #4b1373;
+    text-decoration: none;
+}
+
+main {
+    /* background-color: #faeff8; */
+    background-color: #f5f4f3;
+    padding: 1rem;
+    margin: 0 0.5rem;
+    max-width: 40rem;
+    border-radius: 0.25rem;
+}
+
+h2 {
+    margin: 2rem 0 1rem;
+}
+
+h3 {
+    margin: 1.5rem 0 1rem;
+}
+
+cite {
+    font-style: italic;
 }
