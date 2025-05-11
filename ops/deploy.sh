@@ -13,8 +13,8 @@ server_ssh=$1
 
 hugo
 
-rsync ./conf/maxhully.net.conf "$server_ssh:/etc/nginx/sites-available/maxhully.net.conf"
-rsync -avc --progress ./public/ root@servermax:/var/www/maxhully.net/
+rsync ./ops/maxhully.net.conf "$server_ssh:/etc/nginx/sites-available/maxhully.net.conf"
+rsync -avc --progress ./public/ "$server_ssh:/var/www/maxhully.net/"
 
 ssh -q -T "$server_ssh" <<EOL
     test -f /etc/nginx/sites-enabled/maxhully.net.conf ||
