@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    <link rel="stylesheet" href="/style.css">
+    <title>Max Hully</title>
+</head>
+
+<body>
+    <a href="/" class="name">{{ partial "name.svg" . }}</a>
+    <main>
+        <h1 class="post__title">{{ .Title }}</h1>
+        <time class="post__time" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}</time>
+
+        {{ .Content }}
+
+        <nav>
+            <a href="/">← Back home</a>
+        </nav>
+    </main>
+
+</body>
+
+</html>
