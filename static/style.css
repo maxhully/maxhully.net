@@ -22,10 +22,10 @@ h1 {
 }
 
 .name {
-    width: 50vw;
+    width: 30vw;
     min-width: min(350px, 95vw);
     /* height: 25vh; */
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     padding: 0;
     font-size: 1rem;
 }
