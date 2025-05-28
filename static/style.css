@@ -22,7 +22,7 @@ h1 {
 }
 
 .name {
-    width: 30vw;
+    width: 40vw;
     min-width: min(350px, 95vw);
     /* height: 25vh; */
     margin: 0.5rem auto;

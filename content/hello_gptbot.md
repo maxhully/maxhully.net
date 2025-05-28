@@ -29,5 +29,5 @@ thousands of posts of random unicode characters, dutifully adding the garbled no
 to its heap of training data.
 
 **I think this means that my art project was a success!** Our theatre company of bots
-performed for an audience of bots. The audience was a bit quiet, but they really
-couldn't get enough, and demanded encore after encore.
+performed for an audience of bots. The audience was a bit quiet, but really they
+couldn't get enough.
